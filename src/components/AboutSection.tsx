@@ -1,8 +1,16 @@
-import { Target, Eye, Handshake, CheckCircle } from "lucide-react";
+import { Target, Eye, Handshake, CheckCircle, Compass } from "lucide-react";
 import equipeImg from "@/assets/equipe.jpg";
 
 const AboutSection = () => {
-  const values = ["Ética", "Transparência", "Agilidade", "Comprometimento"];
+  const values = [
+    "Verdade",
+    "Humanização",
+    "Ordem",
+    "Lealdade",
+    "Responsabilidade",
+    "Fé",
+    "Família",
+  ];
 
   return (
     <section id="quem-somos" className="min-h-screen flex items-center py-24 bg-ice-gray">
@@ -17,14 +25,14 @@ const AboutSection = () => {
               Uma história de compromisso e excelência
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Há mais de 8 anos, nossa equipe de contadores e consultores trabalha 
+              Há mais de 12 anos, nossa equipe de contadores e consultores trabalha 
               incansavelmente para transformar a gestão contábil de centenas de empresas 
               em todo o Brasil.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Acreditamos que a contabilidade vai muito além de números e obrigações. 
-              É sobre entender o seu negócio, antecipar oportunidades e construir 
-              uma parceria de longo prazo baseada em confiança e resultados.
+              É sobre entender o seu negócio, antecipar oportunidades e construir uma 
+              parceria de longo prazo baseada em confiança e resultados.
             </p>
 
             {/* Team Image */}
@@ -56,14 +64,35 @@ const AboutSection = () => {
                     Missão
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Transformar a gestão contábil dos nossos clientes, oferecendo soluções 
-                    inteligentes que impulsionam o crescimento sustentável de seus negócios.
+                   Existimos para ser a ponte entre o pequeno e médio empresário brasileiro e a clareza contábil, 
+                   financeira e burocrática, transformando complexidade em resolutividade. Nosso propósito é sermos úteis
+                   e impactar positivamente, através do bom servir e do conhecimento, a jornada daqueles que desejam progredir
+                   e ordenar suas empresas no Brasil e, futuramente, no mundo.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Vision */}
+                {/* Propósito */}
+                <div className="bg-white rounded-2xl p-8 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-300">
+                  <div className="flex items-start gap-5">
+                    <div className="w-14 h-14 rounded-xl bg-emerald-green/10 flex items-center justify-center flex-shrink-0">
+                      <Compass className="h-7 w-7 text-emerald-green" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-heading font-bold text-petrol-blue mb-3">
+                        Propósito
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        Ir além da contabilidade: existimos para auxiliar, dar suporte e sustento, simplificando o que parece impossível e guiando nossos clientes para a prosperidade.
+
+                        É revelar a verdade por trás dos números, desmistificar a burocracia e, através do conhecimento, gerar a transformação que leva à ordem e ao progresso de seus negócios e vidas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Vision */}
             <div className="bg-white rounded-2xl p-8 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)] transition-shadow duration-300">
               <div className="flex items-start gap-5">
                 <div className="w-14 h-14 rounded-xl bg-emerald-green/10 flex items-center justify-center flex-shrink-0">
@@ -74,8 +103,9 @@ const AboutSection = () => {
                     Visão
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Ser referência nacional em inovação contábil até 2030, reconhecida pela 
-                    excelência no atendimento e resultados consistentes.
+                    Ser a referência nacional em consultoria contábil e estratégica para pequenos e médios negócios, 
+                    reconhecida por simplificar o complexo, empoderar empreendedores com conhecimento e ser a parceira 
+                    essencial para a ordenação e a prosperidade empresarial, levando nossa voz e metodologia a grandes lugares.
                   </p>
                 </div>
               </div>

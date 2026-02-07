@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   const handleSendResume = () => {
-    window.location.href = "mailto:wagner752@gmail.com?subject=Envio de Currículo - Trabalhe Conosco";
+    window.location.href = "mailto:contato@avvancecontabilidade.com?subject=Envio de Currículo - Trabalhe Conosco";
   };
 
   return (
@@ -86,27 +86,28 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-emerald-green flex-shrink-0 mt-0.5" />
                 <p className="text-white/60 text-sm">
-                  Rua do Berilo, 303<br />
-                  Lagoa Nova, Natal - RN
+                  Rua João Celso Filho, 1950 - Sala 606, Edifício Plenarium
+                  <br />
+                  Lagoa Nova, Natal - Rio Grande do Norte
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-emerald-green flex-shrink-0" />
-                <a href="tel:+5584991937731" className="text-white/60 text-sm hover:text-emerald-green transition-colors">
-                  (84) 99193-7731
+                <a href="tel:+5584988966860" className="text-white/60 text-sm hover:text-emerald-green transition-colors">
+                  (84) 98896-6860
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-emerald-green flex-shrink-0" />
-                <a href="mailto:wagner752@gmail.com" className="text-white/60 text-sm hover:text-emerald-green transition-colors">
-                  wagner752@gmail.com
+                <a href="mailto:contato@avvancecontabilidade.com" className="text-white/60 text-sm hover:text-emerald-green transition-colors">
+                  contato@avvancecontabilidade.com
                 </a>
               </div>
 
               {/* Real Google Maps */}
               <div className="mt-4 rounded-xl overflow-hidden h-32">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.4419068831715!2d-35.20881282413147!3d-5.821583994223968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ff81a1d7d1c1%3A0x1c1c1c1c1c1c1c1c!2sRua%20do%20Berilo%2C%20303%20-%20Lagoa%20Nova%2C%20Natal%20-%20RN!5e0!3m2!1spt-BR!2sbr!4v1704067200000!5m2!1spt-BR!2sbr"
+                  src="https://www.google.com/maps?q=-5.8285631,-35.2231797&z=17&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "grayscale(100%)" }}
@@ -115,6 +116,16 @@ const Footer = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Localização do escritório"
                 />
+                <div className="mt-2 px-3 pb-2">
+                  <a
+                    href="https://www.google.com/maps/place/R.+Jo%C3%A3o+C%C3%A9lso+Filho,+1950+-+Lagoa+Nova,+Natal+-+RN,+59064-320,+Brasil/@-5.8286378,-35.2229195,194m/data=!3m1!1e3!4m6!3m5!1s0x7b2556501b61259:0x87b52eda271ab9a1!8m2!3d-5.8285631!4d-35.2231797!16s%2Fg%2F11xw7sqr99?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 hover:text-emerald-green text-sm"
+                  >
+                    Abrir no Google Maps
+                  </a>
+                </div>
               </div>
             </div>
           </div>

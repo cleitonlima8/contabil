@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import modeloContabilidade from "@/assets/modelo-contabilidade.png";
 
 const HeroSection = () => {
-  const whatsappLink = "https://wa.me/5584991937731?text=Ol%C3%A1%20gostaria%20de%20atendimento";
+  const whatsappLink = "https://wa.me/5584988966860?text=Ol%C3%A1%20gostaria%20de%20atendimento";
 
   return (
     <section id="inicio" className="relative gradient-hero min-h-screen flex items-center overflow-hidden">

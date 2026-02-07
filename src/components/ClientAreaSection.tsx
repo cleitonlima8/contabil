@@ -19,16 +19,20 @@ const ClientAreaSection = () => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             {/* Nibo Button */}
-            <Button variant="nibo" size="xl" className="min-w-[280px]">
-              <ExternalLink className="h-5 w-5" />
-              Acessar Plataforma Nibo
-            </Button>
+            <a href="https://passport.nibo.com.br/" target="_blank" rel="noopener noreferrer">
+              <Button variant="nibo" size="xl" className="min-w-[280px]">
+                <ExternalLink className="h-5 w-5" />
+                Acessar Plataforma Nibo
+              </Button>
+            </a>
 
             {/* CND Button */}
-            <Button variant="cnd" size="xl" className="min-w-[280px]">
-              <FileCheck className="h-5 w-5" />
-              Emissão de Certidões Negativas
-            </Button>
+            <a href="https://secnatal.com.br/certidoes/" target="_blank" rel="noopener noreferrer">
+              <Button variant="cnd" size="xl" className="min-w-[280px]" aria-label="Emissão de Certidões Negativas">
+                <FileCheck className="h-5 w-5" />
+                Emissão de Certidões Negativas
+              </Button>
+            </a>
           </div>
         </div>
       </div>
