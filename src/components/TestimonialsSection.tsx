@@ -1,11 +1,18 @@
 import { Star } from "lucide-react";
+import gemeosLogo from "@/assets/logos/gemeos-refrigeracao.png";
+import patasPelosLogo from "@/assets/logos/patas-e-pelos.png";
+import reiDasPortasLogo from "@/assets/logos/rei-das-portas.png";
+import oticaOficinaLogo from "@/assets/logos/otica-oficina-dos-oculos.png";
+import tudoPatuLogo from "@/assets/logos/tudo-patu.png";
+import mrChipLogo from "@/assets/logos/mr-chip.png";
 
 const clients = [
-  { name: "TechNova", logo: "TN" },
-  { name: "GlobalTech", logo: "GT" },
-  { name: "BlueStar", logo: "BS" },
-  { name: "GreenPath", logo: "GP" },
-  { name: "NextLevel", logo: "NL" },
+  { name: "Gêmeos Refrigeração", logo: gemeosLogo },
+  { name: "Patas & Pelos", logo: patasPelosLogo },
+  { name: "Rei das Portas", logo: reiDasPortasLogo },
+  { name: "Ótica Oficina dos Óculos", logo: oticaOficinaLogo },
+  { name: "Tudo Patu", logo: tudoPatuLogo },
+  { name: "Mr. Chip", logo: mrChipLogo },
 ];
 
 const testimonials = [
@@ -46,14 +53,9 @@ const TestimonialsSection = () => {
               {[...clients, ...clients].map((client, index) => (
                 <div
                   key={`${client.name}-${index}`}
-                  className="flex-shrink-0 w-40 h-20 bg-ice-gray rounded-xl flex items-center justify-center border border-gray-100"
+                  className="flex-shrink-0 w-40 h-20 flex items-center justify-center"
                 >
-                  <div className="text-center">
-                    <span className="text-2xl font-heading font-bold text-petrol-blue/60">
-                      {client.logo}
-                    </span>
-                    <p className="text-xs text-muted-foreground mt-1">{client.name}</p>
-                  </div>
+                  <img src={client.logo} alt={client.name} className="max-h-full max-w-full object-contain" />
                 </div>
               ))}
             </div>
