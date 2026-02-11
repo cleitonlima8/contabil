@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, ChevronDown, Users, Target, Eye, FileText, Calculator, BarChart3, Building2, Briefcase, Scale } from "lucide-react";
+import { Menu, X, ChevronDown, Users, Target, HeartPulse, Eye, FileText, Calculator, BarChart3, Building2, Briefcase, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -21,6 +21,8 @@ const Navbar = () => {
     { name: "Consultoria Fiscal", icon: FileText, description: "Orientação especializada" },
     { name: "Departamento Pessoal", icon: Users, description: "Folha e obrigações" },
     { name: "Legalização", icon: Scale, description: "Regularização empresarial" },
+    { name: "Consultoria Tributária Para Autonomos", icon: Eye, description: "Saiba qual melhor regime para você" },
+    { name: "Profissionais da Saúde e Bem-Estar", icon: HeartPulse, description: "Estratégia para reduzir sua carga tributária" },
   ];
 
   return (
@@ -79,19 +81,26 @@ const Navbar = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="w-[500px] p-4 grid grid-cols-2 gap-2">
-                    {solutions.map((solution) => (
-                      <a
-                        key={solution.name}
-                        href="#solucoes"
-                        className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
-                      >
-                        <solution.icon className="h-5 w-5 text-emerald-green" />
-                        <div>
-                          <p className="font-medium text-graphite text-sm">{solution.name}</p>
-                          <p className="text-xs text-muted-foreground">{solution.description}</p>
-                        </div>
-                      </a>
-                    ))}
+                    {solutions.map((solution) => {
+                      const Icon = solution.icon as any;
+                      const iconClass = Icon === Eye || Icon === HeartPulse
+                        ? "h-6 w-6 text-emerald-green"
+                        : "h-5 w-5 text-emerald-green";
+
+                      return (
+                        <a
+                          key={solution.name}
+                          href="#solucoes"
+                          className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                        >
+                          <Icon className={iconClass} />
+                          <div>
+                            <p className="font-medium text-graphite text-sm">{solution.name}</p>
+                            <p className="text-xs text-muted-foreground">{solution.description}</p>
+                          </div>
+                        </a>
+                      );
+                    })}
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>

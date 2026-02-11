@@ -32,7 +32,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com/w__wagner"
+                href="https://www.instagram.com/avvancecontabilidade"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-emerald-green transition-colors duration-300"
@@ -40,7 +40,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5 text-white" />
               </a>
               <a
-                href="https://www.linkedin.com/in/wagner--cruz"
+                href="https://www.linkedin.com/in/maria-daiane-bezerra-bento-854588242/?originalSubdomain=br"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-emerald-green transition-colors duration-300"
