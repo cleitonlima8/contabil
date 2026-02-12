@@ -5,6 +5,7 @@ import reiDasPortasLogo from "@/assets/logos/rei-das-portas.png";
 import oticaOficinaLogo from "@/assets/logos/otica-oficina-dos-oculos.png";
 import tudoPatuLogo from "@/assets/logos/tudo-patu.png";
 import mrChipLogo from "@/assets/logos/mr-chip.png";
+import jaRefrigeracaoLogo from "@/assets/logos/ja-refrigeracao.png";
 
 const clients = [
   { name: "Gêmeos Refrigeração", logo: gemeosLogo },
@@ -13,15 +14,16 @@ const clients = [
   { name: "Ótica Oficina dos Óculos", logo: oticaOficinaLogo },
   { name: "Tudo Patu", logo: tudoPatuLogo },
   { name: "Mr. Chip", logo: mrChipLogo },
+  { name: "JA Refrigeração", logo: jaRefrigeracaoLogo },
 ];
 
 const testimonials = [
   {
-    name: "Carlos Silva",
-    company: "TechNova Ltda",
+    name: "Durval Jr",
+    company: "Bepop Music",
     avatar: "CS",
     rating: 5,
-    text: "Excelente atendimento! A equipe sempre pronta para ajudar e resolver qualquer dúvida. Recomendo fortemente.",
+    text: "Sou realmente grato e muito fã do seu trabalho e sua pessoa. A equipe é extremamente competente. E você passa sempre aquela convicção de tudo que lhe compete foi executado perfeito.",
   },
   {
     name: "Ana Beatriz",
@@ -46,7 +48,7 @@ const TestimonialsSection = () => {
         {/* Clients Carousel */}
         <div className="mb-20">
           <p className="text-center text-muted-foreground mb-8 text-sm uppercase tracking-wider">
-            Empresas que confiam em nosso trabalho
+            <strong>Empresas que confiam em nosso trabalho</strong>
           </p>
           <div className="relative">
             <div className="flex gap-16 infinite-scroll">
