@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   // 👇 Em produção usa /Contabil/ para GitHub Pages, em dev usa /
-  base: mode === "production" ? "/Contabil/" : "/",
+  base: mode === "production" ? "/contabil/" : "/",
 
   // 👇 Isso vai fazer o erro aparecer com arquivo/linha do seu código (tsx),
   // em vez de só index-xxxxx.js:40
