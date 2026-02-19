@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write  # Adicionado para garantir permissão de escrita no repositório
   pages: write
   id-token: write
 
@@ -28,7 +28,8 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        # Alterado para 'npm install' para evitar erros caso o package-lock.json não esteja presente
+        run: npm install
 
       - name: Build
         run: npm run build
@@ -36,6 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Garante que o GitHub Pages use a pasta de saída do Vite
           path: dist
 
   deploy:
