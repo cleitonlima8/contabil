@@ -6,6 +6,14 @@ import oticaOficinaLogo from "@/assets/logos/otica-oficina-dos-oculos.png";
 import tudoPatuLogo from "@/assets/logos/tudo-patu.png";
 import mrChipLogo from "@/assets/logos/mr-chip.png";
 import jaRefrigeracaoLogo from "@/assets/logos/ja-refrigeracao.png";
+import apacLogo from "@/assets/logos/apac.png";
+import destaPodcastLogo from "@/assets/logos/desta-podcast.png";
+import fzProducoesLogo from "@/assets/logos/fz-producoes.png";
+import gilEletricaLogo from "@/assets/logos/gil-eletrica.png";
+import lopesImobiliariaLogo from "@/assets/logos/lopes-imobiliaria.png";
+import pereiraConstrucaoLogo from "@/assets/logos/pereira-construcao.png";
+import torresMelloLogo from "@/assets/logos/torres-e-mello.png";
+import unahAvioesLogo from "@/assets/logos/unah-avioes.png";
 
 const clients = [
   { name: "Gêmeos Refrigeração", logo: gemeosLogo },
@@ -15,6 +23,14 @@ const clients = [
   { name: "Tudo Patu", logo: tudoPatuLogo },
   { name: "Mr. Chip", logo: mrChipLogo },
   { name: "JA Refrigeração", logo: jaRefrigeracaoLogo },
+  { name: "APAC", logo: apacLogo },
+  { name: "Desta Podcast", logo: destaPodcastLogo },
+  { name: "FZ Produções", logo: fzProducoesLogo },
+  { name: "Gil Elétrica", logo: gilEletricaLogo },
+  { name: "Lopes Imobiliária", logo: lopesImobiliariaLogo },
+  { name: "Pereira Construção", logo: pereiraConstrucaoLogo },
+  { name: "Torres & Mello", logo: torresMelloLogo },
+  { name: "UNAH Aviões", logo: unahAvioesLogo },
 ];
 
 const testimonials = [
@@ -26,18 +42,18 @@ const testimonials = [
     text: "Sou realmente grato e muito fã do seu trabalho e sua pessoa. A equipe é extremamente competente. E você passa sempre aquela convicção de tudo que lhe compete foi executado perfeito.",
   },
   {
-    name: "Ana Beatriz",
-    company: "GlobalTech",
+    name: "Ana Dias",
+    company: "J & A Refrigeração",
     avatar: "AB",
     rating: 5,
-    text: "Profissionais extremamente competentes. Desde que contratamos, nossa gestão financeira melhorou muito.",
+    text: "Depois que contratei o escritório, parei de ter dor de cabeça com imposto. Eles resolvem tudo pra mim.",
   },
   {
-    name: "Roberto Mendes",
-    company: "BlueStar",
+    name: "Thiago Santos",
+    company: "TS Arquitetura",
     avatar: "RM",
     rating: 5,
-    text: "A contabilidade consultiva deles realmente faz diferença. Nos ajudaram a economizar milhares em impostos.",
+    text: "Meu faturamento aumentou e eu não sabia a hora certa de mudar. Procurei Daiane por indicação e ela me orientou na hora certa pra mudar de categoria. Muito parceiros!",
   },
 ];
 
