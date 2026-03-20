@@ -1,6 +1,5 @@
 import { MessageCircle, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import modeloContabilidade from "@/assets/modelo-contabilidade.png";
 
 const HeroSection = () => {
   const whatsappLink = "https://wa.me/5584988966860?text=Ol%C3%A1%20gostaria%20de%20atendimento";
@@ -12,7 +11,7 @@ const HeroSection = () => {
       <div className="blob-decoration w-[300px] h-[300px] right-1/4 bottom-10" />
       
       <div className="container mx-auto px-4 py-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col items-center text-center">
           {/* Left Content */}
           <div className="space-y-8 relative z-10">
             {/* Tag */}
@@ -34,7 +33,7 @@ const HeroSection = () => {
             </p>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <div className="flex flex-wrap gap-4 justify-center animate-fade-in" style={{ animationDelay: "0.3s" }}>
               <Button variant="hero-primary" size="xl" asChild>
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="h-5 w-5" />
@@ -50,7 +49,7 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="flex gap-8 pt-6 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <div className="flex gap-8 pt-6 justify-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <div>
                 <p className="text-3xl font-heading font-bold text-secondary-foreground">+100</p>
                 <p className="text-secondary-foreground/70 text-sm">Clientes atendidos</p>
@@ -68,16 +67,7 @@ const HeroSection = () => {
 
           {/* Right Content - Image */}
           <div className="relative flex justify-center lg:justify-end animate-slide-up">
-            <div className="relative">
-              <div className="w-[350px] h-[450px] md:w-[400px] md:h-[520px] rounded-2xl overflow-hidden">
-                <img 
-                  src={modeloContabilidade} 
-                  alt="Profissional de contabilidade" 
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-
-            </div>
+           
           </div>
         </div>
       </div>
