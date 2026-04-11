@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
               {[...clients, ...clients].map((client, index) => (
                 <div
                   key={`${client.name}-${index}`}
-                  className="flex-shrink-0 w-40 h-20 flex items-center justify-center"
+                  className="flex-shrink-0 w-56 h-32 flex items-center justify-center"
                 >
                   <img src={client.logo} alt={client.name} className="max-h-full max-w-full object-contain" />
                 </div>
