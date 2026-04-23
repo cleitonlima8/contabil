@@ -81,7 +81,7 @@ const Navbar = () => {
                 <NavigationMenuContent>
                   <div className="w-[500px] p-4 grid grid-cols-2 gap-2">
                     {solutions.map((solution) => {
-                      const Icon = solution.icon as any;
+                      const Icon = solution.icon;
                       const iconClass = Icon === Eye || Icon === HeartPulse
                         ? "h-6 w-6 text-primary"
                         : "h-5 w-5 text-primary";
