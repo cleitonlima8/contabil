@@ -105,7 +105,7 @@ const AboutSection = () => {
                   <h3 className="text-xl font-heading font-bold text-petrol-blue mb-3">
                     Valores
                   </h3>
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {values.map((value) => (
                       <div key={value} className="flex items-center gap-2">
                         <CheckCircle className="h-4 w-4 text-emerald-green" />
